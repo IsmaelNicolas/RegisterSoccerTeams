@@ -5,7 +5,7 @@ from models.entities.Team import Team
 # MODELS
 from models.TeamModel import TeamModel
 
-main = Blueprint('soocer_blueprint', __name__)
+main = Blueprint('teams_blueprint', __name__)
 
 
 @main.route('/')
