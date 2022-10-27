@@ -6,7 +6,7 @@ from flask_cors import CORS
 from routes import Team
 
 app = Flask(__name__)
-CORS(app, resources={'*': {}})
+CORS(app, resources={r"/api/*": {"origins": "http://localhost"} })
 
 
 def page_not_found(error):
